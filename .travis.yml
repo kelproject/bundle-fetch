@@ -4,6 +4,8 @@ go:
   - 1.6
 script:
   - ./scripts/build.sh
+after_success:
+  - gcloud --version
 deploy:
   provider: script
   skip_cleanup: true
