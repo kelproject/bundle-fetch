@@ -6,4 +6,5 @@ script:
   - ./scripts/build.sh
 deploy:
   provider: script
+  skip_cleanup: true
   script: scripts/deploy.sh
